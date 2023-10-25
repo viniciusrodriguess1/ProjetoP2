@@ -42,6 +42,7 @@ public class miniprojeto1 {
             System.out.println("Oque acarreta o inicio de uma briga com todos que estão no bar.");
             }else if(op1 == 2){
                 System.out.println("Voce paga sua conta e sair do bar quieto, pois sabe que vai dar confusão.");
+                System.out.println("-----------------------------------------------");
                 System.out.println("Ao sair do bar voce avista uma hospedaria mas ao olhar para o outro lado ve um assalto acontecendo ");
                 System.out.println("Voce pode escolher entre ir se hospedar e descansar(digite 1)");
                 System.out.println("Tentar impedir o assaltante(digite 2)");
@@ -54,6 +55,7 @@ public class miniprojeto1 {
             }
         }else if(op1 == 3){
             System.out.println("Voce paga sua conta e sair do bar quieto, pois sabe que vai dar confusão.");
+            System.out.println("-----------------------------------------------");
             System.out.println("Ao sair do bar voce avista uma hospedaria mas ao olhar para o outro lado ve um assalto acontecendo ");
             System.out.println("Voce pode escolher entre ir se hospedar e descansar(digite 1)");
             System.out.println("Tentar impedir o assaltante(digite 2)");
