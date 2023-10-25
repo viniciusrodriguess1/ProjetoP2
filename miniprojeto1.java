@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class miniprojeto1 {
     public static void main(String[] args){
         System.out.println("-----------------------------------------------");
-        System.out.println("Ola, seja bem vindo ao Livro interativo");
+        System.out.println("Ola, seja bem vindo ao Livro interativo!");
         System.out.println("Esté livro funciona da seguinte forma:");
         System.out.println( "A historia é 'pré-programada' porem ha interação do usuario,onde o usuario pode escolher umas sequenca de passos pre definidos.");
-        System.out.println("É basicamente isto, divirta-se com a historia");
+        System.out.println("É basicamente isto, divirta-se com a historia!");
         System.out.println("-----------------------------------------------");
         
         System.out.println("Para começarmos gostaria que voce nomeasse o seu personagem");
