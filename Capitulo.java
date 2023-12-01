@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Capitulo {
     public String nome;
     public String texto;
-    public String escolha1;
-    public String escolha2;
+    public String[] escolhas;
     public Personagens personagem;
     public Personagens inimigo;
     public double alteracaoVida;
@@ -16,22 +15,35 @@ public class Capitulo {
         System.out.println("-----------------------------------------------");
         System.out.println(texto);
         System.out.println("-----------------------------------------------");
-        System.out.println(escolha1);
-        System.out.println("-----------------------------------------------");
-        System.out.println(escolha2);
+        for(int i = 0;i < escolhas.length;i++){
+            System.out.println(escolhas[i]);
+        }
         System.out.println("-----------------------------------------------");
         personagem.vida += alteracaoVida;        
     }
 
     int escolher(){
         Scanner escaneador = new Scanner(System.in);
-        int escolha = escaneador.nextInt();
-        while(escolha != 1 && escolha !=2){
-            escolha = escaneador.nextInt();
+        int opcaoEscolhida = 0;
+        boolean escolhaValida = false;
+        while(!escolhaValida){
+            System.out.println("Digite o número da escolha desejada:");
+            int escolha = escaneador.nextInt();
+            escaneador.nextLine();
+            for(int i= 0; i<escolhas.length;i++){
+                if(escolha==i+1){
+                    escolhaValida = true;
+                    opcaoEscolhida = i + 1;
+                }
+            }
+            if(!escolhaValida){
+                System.out.println("Escolha invalida, por favor tente novamente");
+            }
         }
-        return escolha;
-        
+        return opcaoEscolhida;
     }
+
+
     void batalha(){
         while(inimigo.vida>0 && personagem.vida>0){
             System.out.println("Voce pode atacar usando o seu ataque basico(digite 1) ou não fazer nada(digite 2)");
@@ -52,11 +64,10 @@ public class Capitulo {
 
     }
 
-    Capitulo(String nome,String texto,String escolha1,String escolha2,Personagens personagem,Personagens inimigo){
+    Capitulo(String nome,String texto,String[] escolhas,Personagens personagem,Personagens inimigo){
         this.nome = nome;
         this.texto = texto;
-        this.escolha1 = escolha1;
-        this.escolha2 = escolha2;
+        this.escolhas = escolhas;
         this.personagem = personagem;
         this.inimigo = inimigo;
     }
