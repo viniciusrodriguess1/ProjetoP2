@@ -91,11 +91,11 @@ public class Capitulo {
                         capituloAtual = proximoCapitulo;
                     } else {
                         capituloAtual.fim();
-                        capituloAtual = null;  // Saia do loop se não houver próximo capítulo
+                        capituloAtual = null;  
                     }
                 } else {
                     System.out.println("Escolha inválida. Fim do jogo.");
-                    capituloAtual = null;  // Saia do loop se a escolha for inválida
+                    capituloAtual = null; 
                 }
             }
         }
