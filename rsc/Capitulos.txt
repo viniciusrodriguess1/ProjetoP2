@@ -1,0 +1,40 @@
+CAPITULO
+cap0
+Prefacio, Olá, Protagonista, seja bem-vindo ao Livro interativo!
+Esté livro funciona da seguinte forma:
+A historia é 'pré-programada' porem ha interação do usuario,onde o usuario pode escolher umas sequenca de passos pre definidos.
+É basicamente isto, divirta-se com a historia!
+mc
+null
+
+CAPITULO
+cap1
+Capitulo 1, Protagonista, você está em um bar à noite, onde todos estão animados bebendo e cantando...
+Vê entrar no bar um senhor de idade mais avançada com uma expressão não muito amigavel.
+Um de seus colegas tenta o convidar para entrar na brincadeira.
+mc
+null
+
+CAPITULO
+cap2
+Capitulo 2, Protagonista, você decide tirar satisfação com o senhor...
+mc
+se
+
+CAPITULO
+cap21
+Capitulo 21, Protagonista, você decide sair do bar quieto...
+mc
+null
+
+CAPITULO
+cap3
+Capitulo 3, Protagonista, você decide impedir o assaltante...
+mc
+ass
+
+CAPITULO
+cap4
+Capitulo 4, Protagonista, você decide ficar a noite na hospedaria descansando e vai até lá...
+mc
+null

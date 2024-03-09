@@ -1,0 +1,17 @@
+PERSONAGEM
+se
+Senhor
+10
+3
+
+PERSONAGEM
+ass
+Assaltante
+15
+2
+
+PERSONAGEM
+mc
+Protagonista
+20
+5

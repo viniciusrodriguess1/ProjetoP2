@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class Personagens {
     private String nome;
-    private double vida;
-    private double dano;
+    private int vida;
+    private int dano;
 
     public String getNome() {
         return nome;
     }
 
-    public double getVida() {
+    public int getVida() {
         return vida;
     }
 
-    public void setVida(double vida) {
+    public void setVida(int vida) {
         if (vida < 0) {
             System.out.println("Valor de vida inválido. Ajustando para 0.");
             this.vida = 0;
@@ -22,7 +22,7 @@ public class Personagens {
         }
     }
 
-    public double getDano() {
+    public int getDano() {
         return dano;
     }
 
@@ -32,7 +32,7 @@ public class Personagens {
         System.out.println(atacado.getNome() + " agora tem " + atacado.getVida() + " pontos de vida.");
     }
 
-    private void desc() {
+    /*private void desc() {
         double vidaRecuperada = 10.0; 
         double vidaMaxima = 20.0;
         if ((this.vida + vidaRecuperada) > vidaMaxima) {
@@ -42,9 +42,9 @@ public class Personagens {
         }
 
         System.out.println(this.nome + " recuperou " + vidaRecuperada + " pontos de vida, agora está com " + this.vida);
-    }
+    } */
 
-    public Personagens(String nome, double vida, double dano) {
+    public Personagens(String nome, int vida, int dano) {
         this.vida = vida;
         this.dano = dano;
         if (nome != null) {
